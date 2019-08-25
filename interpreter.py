@@ -4,7 +4,7 @@ import sys
 
 # env vars
 campus = 1 # bmc 0, hc 1
-day = 4 # start from Sun
+day = 5 # start from Sun
 
 fin = open("in-day" + str(day) + ".txt", "r")
 fout = open("out-day" + str(day) + "campus" + str(campus) + ".txt", "w")
