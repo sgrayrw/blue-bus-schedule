@@ -3,8 +3,8 @@
 import sys
 
 # env vars
-campus = 0 # bmc 0, hc 1
-day = 3 # start from Sun
+campus = 1 # bmc 0, hc 1
+day = 4 # start from Sun
 
 fin = open("in-day" + str(day) + ".txt", "r")
 fout = open("out-day" + str(day) + "campus" + str(campus) + ".txt", "w")
