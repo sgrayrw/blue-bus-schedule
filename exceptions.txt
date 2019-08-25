@@ -10,3 +10,6 @@ hc 13
 
 thu
 hc 9:40
+
+sat
+bmc 24 and hc 24:15 need to be recorded TWICE, with different timestamp (one in the start of the week, one in the end)

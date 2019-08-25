@@ -4,7 +4,7 @@ import sys
 
 # env vars
 campus = 1 # bmc 0, hc 1
-day = 5 # start from Sun
+day = 6 # start from Sun
 
 fin = open("in-day" + str(day) + ".txt", "r")
 fout = open("out-day" + str(day) + "campus" + str(campus) + ".txt", "w")
@@ -30,7 +30,10 @@ for line in fin:
         min = int(temp[1].split(" ")[0])
 
     # timestamp
-    timestamp = 24*60*day + 60*hr + min
+    timestamp = 24 * 60 * day + 60 * hr + min
+    # treat runs on Sat after 24:00 as in new week
+    if day == 6 and hr >= 24:
+        timestamp = 60 * (hr - 24) + min
 
     # output
     out = "{\n\tday: " + str(day) + \
