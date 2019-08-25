@@ -1,0 +1,12 @@
+events NOT recorded in `in-dayN.txt`:
+mon
+hc 13
+
+tue
+hc 9:40
+
+wed
+hc 13
+
+thu
+hc 9:40

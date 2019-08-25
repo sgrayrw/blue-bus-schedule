@@ -3,8 +3,8 @@
 import sys
 
 # env vars
-campus = 1 # bmc 0, hc 1
-day = 1 # start from Sun
+campus = 0 # bmc 0, hc 1
+day = 3 # start from Sun
 
 fin = open("in-day" + str(day) + ".txt", "r")
 fout = open("out-day" + str(day) + "campus" + str(campus) + ".txt", "w")
@@ -17,6 +17,11 @@ for line in fin:
     hr = int(element.split(":")[0].split(" ")[0])
     if "p.m" in element and not hr == 12:
         hr += 12
+    if "a.m" in element:
+        if hr == 12:
+            hr += 12
+        elif hr < 4:
+            hr += 24
 
     # min
     min = 0
