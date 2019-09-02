@@ -1,4 +1,4 @@
-# TODO: important! this script doesn't handle time after 24:00 (e.g. 12:05 am, 2:45 am), which requires MANUAL insertion
+# TODO: important! some exception not handled by this script are saved in `exception.txt`
 
 import sys
 
